@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar-brand">
+                <div class="navbar-logo">Y</div>
+                Hacker News
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-link"><a onclick="shiftTab('New')">New</a></li>
+                <li class="navbar-link"><a onclick="shiftTab('Top')">Top</a></li>
+                <li class="navbar-link"><a onclick="shiftTab('Best')">Best</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <ol type="1" id="content-list">
+            </ol>
+            <button onclick="LoadMore()" id="LoadMore" >LoadMore</button>
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
